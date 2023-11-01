@@ -526,6 +526,13 @@ img {
 /* ====wawd==== */
 .wawd {
   padding-bottom: 120px;
+  display: none;
+}
+
+@media only screen and (min-width: 1158px) {
+  .wawd {
+    display: flex;
+  }
 }
 
 .wawd-title {
@@ -540,18 +547,8 @@ img {
 }
 
 .wawd-list {
-  display: none;
+  display: flex;
   gap: 24px;
-}
-
-.wawd {
-  display: none;
-}
-
-@media only screen and (min-width: 1158px) {
-  .wawd-list {
-    display: flex;
-  }
 }
 
 .wawd-list-item {
