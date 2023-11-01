@@ -142,7 +142,7 @@ img {
 }
 .page-header {
   display: flex;
-
+  justify-content: space-between;
   align-items: center;
 }
 .page-nav {
@@ -152,18 +152,29 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 
 .logo-header {
-  margin-right: 76px;
   padding: 24px 0;
   display: block;
 }
 
+@media only screen and (min-width: 768px) {
+  .logo-header {
+    margin-right: 76px;
+  }
+}
+
 .nav-list {
-  display: flex;
+  display: none;
   gap: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+  }
 }
 
 .nav-list-item {
@@ -205,8 +216,14 @@ img {
 }
 
 .contact {
-  display: block;
+  display: none;
   align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+  }
 }
 
 .contact-list {
