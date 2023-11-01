@@ -166,6 +166,10 @@ img {
   }
 }
 
+.header-menu-icon {
+  fill: var(--nv);
+}
+
 .nav-list {
   display: none;
   gap: 40px;
