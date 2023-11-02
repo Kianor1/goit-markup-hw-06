@@ -91,7 +91,7 @@ body {
   letter-spacing: 0.32px;
 }
 
-@media screen and (min-width: 768px;) {
+@media screen and (min-width: 768px) {
   .contact-list {
     display: none;
   }
@@ -164,10 +164,6 @@ img {
   .logo-header {
     margin-right: 76px;
   }
-}
-
-.header-menu-icon {
-  fill: var(--nv);
 }
 
 .nav-list {
@@ -255,6 +251,27 @@ img {
 .contact-item:hover,
 .contact-item:focus {
   color: var(--ocean);
+}
+
+.header-open-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+.header-menu-icon {
+  fill: var(--nv);
+  align-items: center;
+  justify-content: center;
 }
 /* ======/HEADER====== */
 /* ======FOOTER====== */
@@ -446,7 +463,7 @@ img {
   padding: 96px 0;
 }
 
-@media screen and (min-widht: 1158px;) {
+@media screen and (min-widht: 1158px) {
   .advantages {
     margin: 120px 0;
   }
@@ -993,6 +1010,20 @@ img {
   margin: auto;
 }
 /* ====/modal==== */
+
+.mobile-menu-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
 
 .hide {
   display: none;

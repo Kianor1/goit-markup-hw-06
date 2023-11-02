@@ -17,18 +17,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Студія</title>
   </head>
-  <body>
+  <body style="overflow: hidden">
     <header class="header">
       <div class="page-header container">
         <nav class="page-nav">
           <a href="./index.html" class="logo logo-header link"
             >Web<span class="logo-studio-header">Studio</span></a
           >
-          <button class="header-menu" type="button">
-            <svg class="header-menu-icon" width="32" height="22">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
+
           <ul class="nav-list list">
             <li class="nav-list-item">
               <a href="./index.html" class="nav-item current link">Studio</a>
@@ -55,6 +51,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="header-open-menu menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="header-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -516,5 +522,24 @@
     </div> -->
     <!-- <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script> -->
+    <div class="mobile-menu-box js-menu-container" id="mobile-menu">
+      <button class="modal-box-close menu-toggle js-close-menu" type="button">
+        <svg class="modal-box-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
