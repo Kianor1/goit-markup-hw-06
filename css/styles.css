@@ -253,26 +253,6 @@ img {
   color: var(--ocean);
 }
 
-.header-open-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-
-@media screen and (min-width: 768px) {
-  .header-menu {
-    display: none;
-  }
-}
-
-.header-menu-icon {
-  fill: var(--nv);
-  align-items: center;
-  justify-content: center;
-}
 /* ======/HEADER====== */
 /* ======FOOTER====== */
 .footer {
@@ -1011,6 +991,27 @@ img {
 }
 /* ====/modal==== */
 
+.header-open-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+}
+
+.header-menu-icon {
+  fill: var(--nv);
+  align-items: center;
+  justify-content: center;
+}
+
 .mobile-menu-box {
   position: fixed;
   top: 0;
@@ -1023,6 +1024,10 @@ img {
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+
+.mobile-menu-box.is-open {
+  transform: translateX(0);
 }
 
 .hide {
