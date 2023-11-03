@@ -11,6 +11,7 @@
   --light-slt: #8e8f99;
   --green: #31d0aa;
   --dairy: #fcfcfc;
+  --grey: #2e2f42;
 }
 
 h1,
@@ -144,6 +145,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .page-nav {
   display: flex;
@@ -227,7 +229,7 @@ img {
 }
 
 .contact-list {
-  display: flex;
+  display: block;
   gap: 40px;
   margin-left: 332px;
 }
@@ -235,6 +237,12 @@ img {
 .contact-list-item {
   display: block;
   padding: 24px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .contact-list-item {
+    display: flex;
+  }
 }
 
 .contact-item {
@@ -387,7 +395,7 @@ img {
 /* ======STUDIO====== */
 /* ====HERO==== */
 .hero {
-  background-color: var(--nv);
+  background-color: var(--grey);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -396,9 +404,15 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1440px;
+  max-width: 767.98px;
   padding: 188px 0;
   margin: 0 auto;
+}
+
+@media screen (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../images/studio/people-office@2x.jpg);
+  }
 }
 
 .hero-title {
@@ -1016,8 +1030,9 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 1000vw;
+  width: 100vw;
   height: 100vh;
+  padding: 80px 35px 40px 40px;
   background-color: var(--wht);
   z-index: 999;
   transform: translateX(100%);
