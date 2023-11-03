@@ -1001,7 +1001,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .header-menu {
+  .header-open-menu {
     display: none;
   }
 }
@@ -1029,19 +1029,21 @@ img {
 }
 
 .mobile-menu-close {
-  position: absolute;
+  /* position: absolute; */
   top: 24px;
   right: 24px;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
   background-color: var(--cornflwr);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
   cursor: pointer;
+  border-radius: 50%;
+  outline: none;
 }
 
 .mobile-menu {
