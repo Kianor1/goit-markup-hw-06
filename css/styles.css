@@ -1068,8 +1068,7 @@ img {
 }
 
 .mobile-menu-contacts {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin-left: 40px;
   margin-right: 35px;
   margin-top: auto;
@@ -1078,6 +1077,26 @@ img {
 
 .mobile-menu-contacts-link {
   color: var(--slt);
+}
+
+.mobile-menu-social-box {
+  display: flex;
+}
+
+.mobile-menu-social-list {
+  display: flex;
+  gap: 56px;
+  top: 48px;
+}
+
+.mobile-menu-social-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .hide {
