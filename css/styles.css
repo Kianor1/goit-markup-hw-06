@@ -1016,7 +1016,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 0vw;
+  width: 1000vw;
   height: 100vh;
   background-color: var(--wht);
   z-index: 999;
@@ -1024,7 +1024,7 @@ img {
   transition: transform 250ms ease-in-out;
 }
 
-.mobile-menu-box .is-open {
+.mobile-menu-box.is-open {
   transform: translateX(0);
 }
 
