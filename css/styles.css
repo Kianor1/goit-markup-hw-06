@@ -524,7 +524,11 @@ img {
 @media only screen and (min-resolution: 192dpi) {
   .hero {
     max-width: 1158px;
-    background-image: url(../images/studio/people-office@2x.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/studio/people-office@2x.jpg);
   }
 }
 

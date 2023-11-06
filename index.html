@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Студія</title>
   </head>
-  <body style="overflow: hidden">
-    <!-- <header class="header">
+  <body>
+    <!-- style="overflow: hidden" -->
+    <header class="header">
       <div class="page-header container">
         <nav class="page-nav">
           <a href="./index.html" class="logo logo-header link"
@@ -61,9 +62,9 @@
           </svg>
         </button>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">
             Effective Solutions<br /><span class="for">for</span> Your Business
@@ -72,8 +73,8 @@
             Order Service
           </button>
         </div>
-      </section> -->
-      <!-- <section class="advantages">
+      </section>
+      <section class="advantages">
         <div class="container">
           <h2 class="advantages-title visually-hidden">123</h2>
           <ul class="advantages-list list">
@@ -127,13 +128,17 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="wawd">
         <div class="container">
           <h2 class="wawd-title">What are we doing</h2>
           <ul class="wawd-list list">
             <li class="wawd-list-item link">
               <img
+                srcset="
+                  ./images/studio/wawd-1.jpg    1x,
+                  ./images/studio/wawd-1@2x.jpg 2x
+                "
                 src="./images/studio/wawd-1.jpg"
                 alt="interface"
                 width="360"
@@ -141,6 +146,10 @@
             </li>
             <li class="wawd-list-item link">
               <img
+                srcset="
+                  ./images/studio/wawd-2.jpg    1x,
+                  ./images/studio/wawd-2@2x.jpg 2x
+                "
                 src="./images/studio/wawd-2.jpg"
                 alt="contact in messenger"
                 width="360"
@@ -148,6 +157,10 @@
             </li>
             <li class="wawd-list-item link">
               <img
+                srcset="
+                  ./images/studio/wawd-3.jpg    1x,
+                  ./images/studio/wawd-3@2x.jpg 2x
+                "
                 src="./images/studio/wawd-3.jpg"
                 alt="mobile app"
                 width="360"
@@ -156,178 +169,194 @@
           </ul>
         </div>
       </section>
-    <section class="oteam">
-      <div class="container">
-        <h2 class="wawd-title">Our Team</h2>
-        <ul class="ot-list list">
-          <li class="ot-list-item link">
-            <img
-              srcset="
-                ./images/studio/guerrero.jpg    1x,
-                ./images/studio/guerrero@2x.jpg 2x
-              "
-              src="./images/studio/guerrero.jpg"
-              alt="Marc Guerrero"
-              width="264"
-            />
-            <div class="ot-item-name">
-              <h3 class="ot-list-title">Mark Guerrero</h3>
-              <p class="ot-list-discr text">Product Designer</p>
-              <ul class="ot-list-social list">
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="ot-list-item link">
-            <img src="./images/studio/imgot-2.jpg" alt="Tom Ford" width="264" />
-            <div class="ot-item-name">
-              <h3 class="ot-list-title">Tom Ford</h3>
-              <p class="ot-list-discr text">Frontend Developer</p>
-              <ul class="ot-list-social list">
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="ot-list-item link">
-            <img
-              src="./images/studio/imgot-3.jpg"
-              alt="Camila Garsia"
-              width="264"
-            />
-            <div class="ot-item-name">
-              <h3 class="ot-list-title">Camila Garcia</h3>
-              <p class="ot-list-discr text">Marketing</p>
-              <ul class="ot-list-social list">
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="ot-list-item link">
-            <img
-              src="./images/studio/imgot-4.jpg"
-              alt="Daniel Wilson"
-              width="264"
-            />
-            <div class="ot-item-name">
-              <h3 class="ot-list-title">Daniel Wilson</h3>
-              <p class="ot-list-discr text">UI Designer</p>
-              <ul class="ot-list-social list">
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="ot-social-item">
-                  <a class="ot-social-link link" href="">
-                    <svg class="ot-social-icon" width="16" height="16">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- <section class="customers">
+      <section class="oteam">
+        <div class="container">
+          <h2 class="wawd-title">Our Team</h2>
+          <ul class="ot-list list">
+            <li class="ot-list-item link">
+              <img
+                srcset="
+                  ./images/studio/guerrero.jpg    1x,
+                  ./images/studio/guerrero@2x.jpg 2x
+                "
+                src="./images/studio/guerrero.jpg"
+                alt="Marc Guerrero"
+                width="264"
+              />
+              <div class="ot-item-name">
+                <h3 class="ot-list-title">Mark Guerrero</h3>
+                <p class="ot-list-discr text">Product Designer</p>
+                <ul class="ot-list-social list">
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="ot-list-item link">
+              <img
+                srcset="
+                  ./images/studio/ford.jpg    1x,
+                  ./images/studio/ford@2x.jpg 2x
+                "
+                src="./images/studio/imgot-2.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
+              <div class="ot-item-name">
+                <h3 class="ot-list-title">Tom Ford</h3>
+                <p class="ot-list-discr text">Frontend Developer</p>
+                <ul class="ot-list-social list">
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="ot-list-item link">
+              <img
+                srcset="
+                  ./images/studio/garcia.jpg    1x,
+                  ./images/studio/garcia@2x.jpg 2x
+                "
+                src="./images/studio/imgot-3.jpg"
+                alt="Camila Garsia"
+                width="264"
+              />
+              <div class="ot-item-name">
+                <h3 class="ot-list-title">Camila Garcia</h3>
+                <p class="ot-list-discr text">Marketing</p>
+                <ul class="ot-list-social list">
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="ot-list-item link">
+              <img
+                srcset="
+                  ./images/studio/wilson.jpg    1x,
+                  ./images/studio/wilson@2x.jpg 2x
+                "
+                src="./images/studio/imgot-4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
+              <div class="ot-item-name">
+                <h3 class="ot-list-title">Daniel Wilson</h3>
+                <p class="ot-list-discr text">UI Designer</p>
+                <ul class="ot-list-social list">
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="ot-social-item">
+                    <a class="ot-social-link link" href="">
+                      <svg class="ot-social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="customers">
         <div class="container">
           <h2 class="wawd-title">Customers</h2>
           <ul class="customers-list list">
@@ -606,6 +635,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
