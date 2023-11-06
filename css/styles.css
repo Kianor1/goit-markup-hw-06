@@ -533,15 +533,6 @@ img {
   margin: 0 auto 48px;
 }
 
-/* color: var(--wht);
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  max-width: 496px;
-  margin: 0 auto 48px; */
-
 .hero-btn {
   background-color: var(--iris);
   font-family: 'Roboto', sans-serif;
@@ -775,12 +766,33 @@ img {
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .customers-list {
+    padding: 0 97px;
+  }
 }
 
 .customers-list-item {
-  width: calc((100% - 120px) / 6);
+  width: 190px;
   height: 88px;
+}
+
+@media only screen and (min-width: 768px) {
+  .customers-list-item {
+    width: 167px;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .customers-list-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+  }
 }
 
 .customers-list-link {
