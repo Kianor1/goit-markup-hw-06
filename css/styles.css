@@ -507,18 +507,33 @@ img {
 /* ======STUDIO====== */
 /* ====HERO==== */
 .hero {
+  display: flex;
+  align-items: center;
   background-color: var(--grey);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/studio/people-office.jpg);
-  /* max-width: 767.98px; */
+  max-width: 767.98px;
+  max-height: 432px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 188px 0;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/studio/people-office.jpg);
+    max-width: 1157.98px;
+    max-height: 436px;
+  }
 }
 
 @media only screen and (min-resolution: 192dpi) {
@@ -533,6 +548,7 @@ img {
 }
 
 .hero-title {
+  display: block;
   color: var(--wht);
   font-size: 36px;
   font-weight: 700;
