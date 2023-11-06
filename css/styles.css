@@ -703,19 +703,41 @@ img {
 
 .ot-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .ot-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    padding: 0 92px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .ot-list {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .ot-list-item {
   background-color: var(--wht);
-  width: calc((100% - 72px) / 4);
+  width: 264px;
+  margin: 0 auto;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .ot-item-name {
+  display: flex;
+  flex-direction: column;
   padding: 32px 0;
+  width: 100%;
 }
 
 .ot-list-title {
