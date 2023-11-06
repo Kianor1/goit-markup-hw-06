@@ -513,13 +513,24 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/studio/people-office.jpg);
-  max-width: 768px;
+  max-width: 767.98px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   padding: 188px 0;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    max-width: 1158px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/studio/people-office@3x.jpg);
+  }
 }
 
 .hero-title {
@@ -531,6 +542,12 @@ img {
   letter-spacing: 0.02em;
   max-width: 496px;
   margin: 0 auto 48px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .for {
+    text-transform: capitalize;
+  }
 }
 
 .hero-btn {
