@@ -679,6 +679,7 @@ img {
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -687,6 +688,7 @@ img {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: left;
   }
 }
 
@@ -839,6 +841,7 @@ img {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px 16px;
 }
 
@@ -855,7 +858,7 @@ img {
 
 @media only screen and (min-width: 768px) {
   .customers-list-item {
-    width: 167px;
+    width: calc((100% - 2 * 24px) / 3);
     column-gap: 24px;
   }
 }
