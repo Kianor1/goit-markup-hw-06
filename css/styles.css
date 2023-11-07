@@ -145,7 +145,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 .page-nav {
   display: flex;
@@ -177,7 +176,6 @@ img {
 .nav-list {
   display: none;
   gap: 5vw;
-  margin-right: 14.5vw;
 }
 
 @media only screen and (min-width: 768px) {
@@ -228,6 +226,7 @@ img {
 
 .contact {
   display: none;
+  margin-left: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -246,22 +245,16 @@ img {
   .contact-list {
     flex-direction: row;
     gap: 3vw;
-    margin: 24px 0;
   }
 }
 
 .contact-list-item {
-  display: flex;
-}
-
-@media only screen and (min-width: 1158px) {
-  .contact-list-item {
-  }
+  display: block;
 }
 
 .contact-item {
   color: var(--slt);
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -272,6 +265,12 @@ img {
 .contact-item:hover,
 .contact-item:focus {
   color: var(--ocean);
+}
+
+@media only screen and (min-width: 1158px) {
+  .contact-item {
+    font-size: 16px;
+  }
 }
 
 /* ======/HEADER====== */
@@ -610,13 +609,13 @@ img {
 
 @media screen and (min-widht: 1158px) {
   .advantages {
-    margin: 120px 0;
+    padding: 120px 0;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .advantages {
-    margin: 120px 0;
+    padding: 120px 0;
   }
 }
 
@@ -848,6 +847,13 @@ img {
 @media only screen and (min-width: 768px) {
   .customers-list {
     padding: 0 97px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .customers-list {
+    padding: 0;
+    gap: 24px;
   }
 }
 
