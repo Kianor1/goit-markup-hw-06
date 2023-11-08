@@ -515,11 +515,10 @@ img {
     ),
     url(../images/studio/people-office.jpg);
   max-width: 767.98px;
-  max-height: 432px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 188px 0;
+  padding: 112px 0;
   margin: 0 auto;
 }
 
@@ -531,7 +530,6 @@ img {
       ),
       url(../images/studio/people-office.jpg);
     max-width: 1157.98px;
-    max-height: 436px;
   }
 }
 
@@ -543,7 +541,6 @@ img {
       ),
       url(../images/studio/people-office.jpg);
     max-width: 1440px;
-    max-height: 600px;
   }
 }
 
@@ -568,6 +565,15 @@ img {
   letter-spacing: 0.02em;
   max-width: 496px;
   margin: 0 auto 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+  }
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -777,12 +783,6 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-/* @media (min-resolution: 192dpi) {
-  .ot-list-item {
-    im: url('guerrero@2x.jpg');
-  }
-} */
 
 .ot-item-name {
   display: flex;
